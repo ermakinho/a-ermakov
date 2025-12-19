@@ -41,6 +41,16 @@ uv run eda-cli overview data/example.csv
 uv run eda-cli report data/example.csv --out-dir reports
 ```
 
+Параметры:
+
+- `--path` – Путь к CSV-файлу;
+- `--out_dir` – Каталог для отчёта (по умолчанию `reports`);
+- `--sep` – разделитель (по умолчанию `,`);
+- `--max_hist_columns` – Максимум числовых колонок для гистограмм (по умолчанию `6`);
+- `--top_k_categories` – Cколько top-значений выводить для категориальных признаков (по умолчанию `5`);
+- `--min_missing_share` – орог доли пропусков (по умолчанию `0.5`);
+- `--encoding` – кодировка (по умолчанию `utf-8`).
+
 В результате в каталоге `reports/` появятся:
 
 - `report.md` – основной отчёт в Markdown;
@@ -51,6 +61,8 @@ uv run eda-cli report data/example.csv --out-dir reports
 - `hist_*.png` – гистограммы числовых колонок;
 - `missing_matrix.png` – визуализация пропусков;
 - `correlation_heatmap.png` – тепловая карта корреляций.
+Пример вызова:
+- `uv run eda-cli report data/example.csv --out-dir reports_example --min-missing-share 0.9 --top-k-categories 7`;
 
 ## Тесты
 
