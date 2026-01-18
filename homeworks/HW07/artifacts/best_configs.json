@@ -1,0 +1,24 @@
+{
+  "ds1": {
+    "model": "DBSCAN",
+    "params": {
+      "eps": 0.5,
+      "min_samples": 32
+    }
+  },
+  "ds2": {
+    "model": "KMeans",
+    "params": {
+      "n_clusters": 2,
+      "n_init": 10,
+      "random_state": 42
+    }
+  },
+  "ds3": {
+    "model": "DBSCAN",
+    "params": {
+      "eps": 0.32,
+      "min_samples": 16
+    }
+  }
+}
