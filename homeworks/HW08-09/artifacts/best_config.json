@@ -1,0 +1,28 @@
+{
+  "model": {
+    "hidden_dims": [
+      256,
+      128,
+      64
+    ],
+    "dropout_p": 0.0,
+    "use_batchnorm": true,
+    "activation": "ReLU"
+  },
+  "training": {
+    "optimizer": "Adam",
+    "lr": 0.001,
+    "batch_size": 64,
+    "early_stopping_patience": 5,
+    "seed": 42
+  },
+  "dataset": {
+    "name": "EMNIST",
+    "train_size": 90240,
+    "val_size": 22560,
+    "test_size": 18800,
+    "num_classes": 47
+  },
+  "best_val_accuracy": 0.8530895892351275,
+  "best_val_loss": 0.44411391906292513
+}
