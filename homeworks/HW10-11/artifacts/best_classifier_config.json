@@ -1,0 +1,13 @@
+{
+    "experiment_id": "C4",
+    "dataset": "STL10",
+    "seed": 42,
+    "architecture": "ResNet18 (pretrained) -> partial finetune (layer4 + fc)",
+    "optimizer": "Adam",
+    "lr": 0.0001,
+    "epochs_trained": 12,
+    "train_transforms": "ToTensor, Normalize",
+    "val_transforms": "ToTensor, Normalize",
+    "best_val_accuracy": 0.877,
+    "test_accuracy": 0.868375
+}

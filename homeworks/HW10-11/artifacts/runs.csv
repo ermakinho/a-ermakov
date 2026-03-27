@@ -1,0 +1,7 @@
+experiment_id,task,dataset,seed,model_summary,optimizer,lr,epochs_trained,best_val_accuracy,test_accuracy,precision,recall,mean_iou,notes
+C1,classification,STL10,42,Simple CNN,Adam,0.001,12,0.599,,,,,
+C2,classification,STL10,42,Simple CNN + aug,Adam,0.001,12,0.576,,,,,
+C3,classification,STL10,42,ResNet18 head only,Adam,0.001,12,0.797,,,,,
+C4,classification,STL10,42,ResNet18 finetune,Adam,0.0001,12,0.877,0.868375,,,,
+V1,detection,Pascal VOC,42,FasterRCNN,,,,,,0.2105475040257649,0.6645489199491741,0.8263780474662781,thr=0.3
+V2,detection,Pascal VOC,42,FasterRCNN,,,,,,0.41830624465355004,0.6213468869123253,0.8326331377029419,thr=0.7
