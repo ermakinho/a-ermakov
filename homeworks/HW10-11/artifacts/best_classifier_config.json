@@ -4,10 +4,11 @@
     "seed": 42,
     "architecture": "ResNet18 (pretrained) -> partial finetune (layer4 + fc)",
     "optimizer": "Adam",
-    "lr": 0.0001,
+    "lr": 0.001,
     "epochs_trained": 12,
-    "train_transforms": "ToTensor, Normalize",
-    "val_transforms": "ToTensor, Normalize",
-    "best_val_accuracy": 0.877,
-    "test_accuracy": 0.868375
+    "train_transforms": "Resize -> ToTensor",
+    "val_transforms": "Resize -> ToTensor",
+    "augmentations": "RandomHorizontalFlip, RandomCrop",
+    "best_val_accuracy": 0.87,
+    "test_accuracy": 0.86375
 }

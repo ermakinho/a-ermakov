@@ -1,0 +1,5 @@
+experiment_id,task,dataset,seed,split_summary,window_size,horizon,model_summary,features_summary,scaler,optimizer,lr,epochs_trained,best_val_mae,best_val_rmse,best_val_mape,test_mae,test_rmse,test_mape,notes
+B1,forecasting,S12-hw-dataset,42,"обучение:3024, валидация:648, тест:648",,1,Наивный прогноз,lag_1,Нет,,,,6.444814814814815,8.20102295260389,0.0439792166354992,,,,Baseline
+B2,forecasting,S12-hw-dataset,42,"обучение:3024, валидация:648, тест:648",,1,Скользящее среднее,rolling_mean_7,Нет,,,,12.702012786596118,15.217644526713752,0.0881686403093607,,,,Baseline
+B3,forecasting,S12-hw-dataset,42,"обучение:3024, валидация:648, тест:648",,1,Ridge регрессия,лаги + статистики + календарь,StandardScaler,,,,6.360190695449106,7.886870745106799,0.04282034673106465,,,,Baseline
+R1,forecasting,S12-hw-dataset,42,"обучение:3024, валидация:648, тест:648",24.0,1,GRU (окно=24),только target (окна),StandardScaler,Adam,0.001,50.0,5.296037673950195,6.873572461432873,0.03584558889269829,6.405054092407227,8.06701344566979,0.041716840118169785,Лучшая модель

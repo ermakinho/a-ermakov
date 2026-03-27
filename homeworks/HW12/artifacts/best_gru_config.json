@@ -1,0 +1,18 @@
+{
+    "model_type": "GRU",
+    "window_size": 24,
+    "hidden_size": 64,
+    "num_layers": 2,
+    "learning_rate": 0.001,
+    "batch_size": 64,
+    "n_epochs": 50,
+    "best_epoch": 50,
+    "best_val_mae": 5.296037673950195,
+    "best_val_rmse": 6.873572461432873,
+    "best_val_mape": 0.03584558889269829,
+    "test_mae": 6.405054092407227,
+    "test_rmse": 8.06701344566979,
+    "test_mape": 0.041716840118169785,
+    "seed": 42,
+    "device": "cuda"
+}
