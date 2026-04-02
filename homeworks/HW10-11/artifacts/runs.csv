@@ -1,7 +1,7 @@
 experiment_id,task,dataset,seed,model_summary,optimizer,lr,epochs_trained,best_val_accuracy,test_accuracy,precision,recall,mean_iou,notes
-C1,classification,STL10,42,SimpleCNN,Adam,0.001,12,0.594,,,,,
-C2,classification,STL10,42,SimpleCNN+aug,Adam,0.001,12,0.581,,,,,
-C3,classification,STL10,42,ResNet18 head,Adam,0.001,12,0.794,,,,,
-C4,classification,STL10,42,ResNet18 finetune,Adam,0.001,12,0.87,0.86375,,,,
-V1,detection,VOC,42,FasterRCNN,,,,,,0.21037811745776347,0.6645489199491741,0.8264366984367371,thr=0.3
-V2,detection,VOC,42,FasterRCNN,,,,,,0.4186643835616438,0.6213468869123253,0.8326972723007202,thr=0.7
+C1,classification,STL10,42,SimpleCNN,Adam,0.001,12,0.569,,,,,96x96 STL10 norm
+C2,classification,STL10,42,SimpleCNN+aug,Adam,0.001,12,0.575,,,,,96x96 STL10 norm + aug
+C3,classification,STL10,42,ResNet18 head,Adam,0.001,12,0.94,,,,,weights.transforms() 224x224
+C4,classification,STL10,42,ResNet18 finetune,Adam,0.0001,12,0.943,0.94875,,,,weights.transforms() 224x224
+V1,detection,Pascal VOC,42,FasterRCNN,,,,,,0.2105475040257649,0.6645489199491741,0.8263780474662781,thr=0.3
+V2,detection,Pascal VOC,42,FasterRCNN,,,,,,0.41830624465355004,0.6213468869123253,0.8326331377029419,thr=0.7
